@@ -1,9 +1,11 @@
 HooYa! Viewer
 =============
 
-A standalone, simple GTK3 image viewer ported from the native file browser of
+A standalone and simple GTK3 image viewer ported from the native file browser of
 my HooYa! image tagger. The viewer is notable for its use of a masonry layout
 to minimize the amount of blank space within the viewer itself.
+
+Here is the viewer rendering some of <a href="https://twitter.com/chaesuart">Chaesu's</a> art.
 
 <p align="center">
     <img src="https://raw.githubusercontent.com/wesl-ee/hooya-viewer/trunk/doc/img/two-window.jpeg" />
@@ -11,25 +13,22 @@ to minimize the amount of blank space within the viewer itself.
 </p>
 
 Loosely inspired by [JPEGView](https://sourceforge.net/projects/jpegview/) and
-[sxiv](https://github.com/muennich/sxiv)
+[sxiv](https://github.com/muennich/sxiv).
 
 Dependencies
 ------------
 
-- gflags
 - cairo
 - gtk3
 
 If you plan on building from source you will need these also:
 
 - cmake
+- gflags
 - C++ compiler like clang++ / g++
 - pkgconfig
 - gtkmm3
 - cairomm
-
-NixOS users can simply run `nix-shell` in the repo directory to enter a build
-environment with all correct packages.
 
 Building
 --------
@@ -44,6 +43,9 @@ cmake ..
 make
 make install
 ```
+
+Nix users can simply run `nix-env -if ./default.nix` in the repo directory to
+download the correct packages, build and install `hooya-viewer`.
 
 Usage
 -----
