@@ -20,7 +20,7 @@ readyToRedraw{true} {
 
 	show_all_children();
 
-	masonLayout.ClampBrickHeight(150);
+	masonLayout.ClampBrickHeight(250);
 	masonLayout.ClampBrickWidth(250);
 
 	signal_realize().connect([&, d] {
